@@ -16,6 +16,16 @@
             background-position: center;
             min-height: 1000px;
         }
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
         @media screen and (max-width: 670px){
             header{
             min-height: 500px;
@@ -31,7 +41,7 @@
     <header>
         <nav class="nav-wrapper grey darken-1">
             <div class="container">
-                <a href="index.html" class="brand-logo">MD Photography</a>
+                <a href="index.html" class="brand-logo">MD</a>
                 <a href="#" class="sidenav-trigger" data-target="mobile-menu">
                     <i class="material-icons">menu</i>
                 </a>
@@ -49,18 +59,101 @@
         </nav>
     </header>
     
-    <footer class="grey darken-1">
-        <div class="container center">
-            <i class="material-icons">copyright</i>
-            <p>copyright Mark Davidson</p>
+    <!-- Photo grid -->
+    <div class="container section" id="photo's">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/cars.jpg" alt="car" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Photography</h2>
+                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+            </div>
         </div>
-    </footer>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/lightroom.jpg" alt="car" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <h2 class="indigo-text text-darken-4">Lightroom work</h2>
+                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/animation.jpg" alt="car" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Animation & video</h2>
+                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parralax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/landscape.jpg" alt="landscape" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Services / tabs -->
+    <section class="container section" id="services">
+       <div class="row">
+           <div class="col s12 l4">
+               <h2 class="indigo-text text-darken-4">What I do..</h2>
+               <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+               <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+           </div>
+           <div class="col s12 l6 offset-l2">
+               <ul class="tabs">
+                   <li class="tab col s6">
+                       <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+                   </li>
+                   <li class="tab col s6">
+                    <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+                </li>
+               </ul>
+               <div class="col s12" id="photography">
+                   <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+                   <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+                   <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+               </div>
+               <div class="col s12" id="editing">
+                <p class="flow-text indigo-text text-darken-4">EDITING</p>
+                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+            </div>
+           </div>
+       </div>
+    </section>
+    
+    <!-- Parralax 2 -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/landscape2.jpg" alt="landscape2" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container">
+        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
+    </div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
     $(document).ready(function(){
         $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
     });
 </script>
 </body>
