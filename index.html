@@ -4,7 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD's Car Photography</title>
-
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Compiled and minified CSS -->
@@ -50,21 +51,27 @@
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Photo's</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#photos">Photo's</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                    <li><a href="https://github.com/mdavidson744" target="_blank" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="github">
+                        <i class="fab fa-github"></i>
+                    </a></li>
                 </ul>
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a href="#">Photo's</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#photos">Photo's</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- Photo grid -->
-    <div class="container section" id="photo's">
+    <div class="container section scrollspy" id="photos">
         <div class="row">
             <div class="col s12 l4">
                 <img src="img/cars.jpg" alt="car" class="responsive-img materialboxed">
@@ -102,10 +109,10 @@
     </div>
 
     <!-- Services / tabs -->
-    <section class="container section" id="services">
+    <section class="container section scrollspy" id="services">
        <div class="row">
            <div class="col s12 l4">
-               <h2 class="indigo-text text-darken-4">What I do..</h2>
+               <h2 class="indigo-text text-darken-4">Services</h2>
                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
            </div>
@@ -140,10 +147,10 @@
     </div>
 
     <!-- Contact Form -->
-    <section class="section container" id="contact">
+    <section class="section container scrollspy" id="contact">
         <div class="row">
             <div class="col s12 l5">
-                <h2 class="indigo-text text-darken-4">Get in touch</h2>
+                <h2 class="indigo-text text-darken-4">Contact Me</h2>
                 <p>Email: mdavidson744@gmail.com</p>
                 <p>github: <a href="https://www.github.com/mdavidson744" target="_blank">mdavidson744</a> </p>
             </div>
@@ -199,6 +206,8 @@
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
         $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
     });
 </script>
 </body>
