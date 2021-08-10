@@ -27,12 +27,16 @@
             background: transparent;
         }
         @media screen and (max-width: 670px){
+            .parallax-container {
+                height: 150px;
+            }
             header{
             min-height: 500px;
         }
         footer{
             vertical-align: bottom;
         }
+
     }
     </style>
 </head>
@@ -58,7 +62,7 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- Photo grid -->
     <div class="container section" id="photo's">
         <div class="row">
@@ -136,14 +140,29 @@
     </div>
 
     <!-- Contact Form -->
-    <div class="container">
-        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
-        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
-        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
-        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
-        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
-        <p class="truncate">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, </p>
-    </div>
+    <section class="section container" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get in touch</h2>
+                <p>Email: mdavidson744@gmail.com</p>
+                <p>github: mdavidson744</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email:</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" cols="30" rows="10"></textarea>
+                        <label for="message">Your message:</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Compiled and minified JavaScript -->
