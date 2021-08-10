@@ -1,5 +1,24 @@
 <html lang="en">
 <head>
+    <style>
+        .row > div{
+            background: grey;
+            padding: 10px;
+            border: 1px solid #fff;
+            /* line-height: 60px; */
+        }
+        .row{
+            margin: 40px auto;
+        }
+        .col > div{
+            background: lightblue;
+        }
+        nav .badge{
+            position: relative;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +26,11 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Materialize Website by Mark</title>
 </head>
 <body>
+    <h1 class="center">Materialize Elements</h1>
+    <h5 class="center">A testing page by Mark</h5>
     <div class="container">
         <h1>Testing styles</h1>
         <h2>h2 title</h2>
@@ -100,5 +119,187 @@
             <i class="material-icons">edit</i>
         </a>
     </div>
+
+    <div class="container">
+        <h1>Responsize Grids</h1>
+        <div class="row">
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+        </div>
+        <div class="row">
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+        </div>
+        <div class="row">
+            <div class="col s6 m3 l4">content</div>
+            <div class="col s6 m3 l4">content</div>
+            <div class="col s6 m3 l4">content</div>
+            <div class="col s6 m3 l4">content</div>
+        </div>
+        <div class="row">
+            <div class="col s6 m3 l4 xl2">content</div>
+            <div class="col s6 m3 l4 xl2">content</div>
+            <div class="col s6 m3 l4 xl2">content</div>
+            <div class="col s6 m3 l4 xl2">content</div>
+            <div class="col s6 m3 l4 xl2">content</div>
+            <div class="col s6 m3 l4 xl2">content</div>
+        </div>
+        <div class="row">
+            <div class="col s12 m8">content</div>
+            <div class="col s12 m4">content</div>
+            <div class="col s12 m4">content</div>
+            <div class="col s12 m8">content</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Depth & Shadows</h1>
+        <div class="row">
+            <div class="col s2">
+                <div class="center">0</div>
+            </div>
+            <div class="col s2">
+                <div class="center z-depth-1">1</div>
+            </div>
+            <div class="col s2">
+                <div class="center z-depth-2">2</div>
+            </div>
+            <div class="col s2">
+                <div class="center z-depth-3">3</div>
+            </div>
+            <div class="col s2">
+                <div class="center z-depth-4">4</div>
+            </div>
+            <div class="col s2">
+                <div class="center z-depth-5">5</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"><h1>Navbars & Badges</h1></div>
+    
+    <nav class="nav-wraper indigo">
+        <div class="container">
+            <a href="#" class="brand-logo">Title</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="btn-floating indigo darken-4 z-depth-0">
+                        <i class="material-icons">notifications</i>
+                    </a></li>
+                    <li><span class="badge white-text pink new">5</span></li>
+                </ul>
+    </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="container">
+        <h1>Cards</h1>
+        <div class="row">
+            <div class="col s12 l6 white">
+                <div class="card white">
+                    <div class="card-image">
+                        <img src="img/curry.jpg" alt="curry">
+                        <a href="#" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Mango & Chickpea curry</span>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More details</a>
+                        <a href="#">View ingredients</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card white">
+                    <div class="card-image">
+                        <img src="img/pastasalad.jpg" alt="pastasalad">
+                        <a href="#" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Rainbow Pasta Salad</span>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More details</a>
+                        <a href="#">View ingredients</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Collections</h1>
+        <ul class="collection with-header">
+            <li class="collection-header"><h4>Customers</h4></li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Ryu</span>
+                <p class="grey-text">black-belt</p>
+                    <a href="#" class="secondary-content">
+                        <i class="material-icons blue-text">email</i>
+                    </a>
+            </li>
+            <li class="collection-item">Yoshi</li>
+            <li class="collection-item">Crystal</li>
+            <li class="collection-item">Mario</li>
+            <li class="collection-item">Luigi</li>
+            <li class="collection-item">Bowser</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Modals</h1>
+        <a href="#terms" class="btn orange modal-trigger">Terms and Conditions</a>
+            
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms and Conditions</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn orange">Agree & Close</a>
+            </div>
+        </div>
+    </div>
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+    });
+</script>
+
 </body>
 </html>
