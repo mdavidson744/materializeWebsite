@@ -1,85 +1,21 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Davidson</title>
-      <!-- font awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<?php include('header.php'); ?>
     <style>
-        header{
+        /* .bg {
             background :url(https://th.bing.com/th/id/R.92eda3ed19a3be9bd1527114f305a2ac?rik=994abWeymphaXA&pid=ImgRaw&r=0);
             background-size: cover;
             background-position: center;
             min-height: 500px;
-        }
-        .section{
-            padding-top: 4vw;
-            padding-bottom: 4vw;
-        }
-        .tabs .indicator{
-            background-color: #1a237e;
-        }
-        .tabs .tab a:focus, .tabs .tab a:focus.active{
-            background: transparent;
-        }
-        @media screen and (max-width: 670px){
-            .parallax-container {
-                height: 150px;
-            }
-            header{
-            min-height: 500px;
-        }
-        footer{
-            vertical-align: bottom;
-        }
-        h3 {
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-        }
-    }
+        } */
     </style>
-</head>
-<body>
-    <!-- Navbar -->
-    <header>
-        <nav class="nav-wrapper grey darken-1">
-            <div class="container">
-                <a href="index.html" class="brand-logo">Mark D</a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="linkedin">
-                        <i class="fab fa-linkedin"></i>
-                    </a></li>
-                    <li><a href="https://github.com/mdavidson744" target="_blank" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="github">
-                        <i class="fab fa-github"></i>
-                    </a></li>
-                </ul>
-                <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+
+    <div class="bg">
+            <div class="container left-align" style="padding-top: 50px;">
+                <h3>Hi,</h3>
+                <h3>Im Mark,</h3>
+                <h3>Software Engineer</h3>
+                <h5 class="white-text">Front end Development / Back end experience / Industry experience</h5>
             </div>
-        </nav>
-        <div class="container left-align" style="padding-top: 50px;">
-            <h3>Hi,</h3>
-            <h3>Im Mark,</h3>
-            <h3>Software Engineer</h3>
-            <h5 class="white-text">Front end Development / Back end experience / Industry experience</h5>
         </div>
-    </header>
 
     <!-- Photo grid -->
     <div class="container section scrollspy" id="experience">
@@ -190,56 +126,4 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="page-footer grey darken-3">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l6">
-                    <h5>About Me</h5>
-                    <p>Mark Davidson</p>
-                    <p>4th year Bsc computer science student</p>
-                    <p>Fd Computer Science</p>
-                    <p>Northern Ireland</p>
-                </div>
-                <div class="col s12 l4 offset-2">
-                    <h5>Connect</h5>
-                    <ul>
-                        <li class="grey-text text-lighten-3"><a href="mailto:mdavidson744@gmail.com">Email: mdavidson744@gmail.com</a></li>
-                        <li class="grey-text text-lighten-3"><a href="https://github.com/mdavidson744" target="_blank">Github</a></li>
-                        <li class="grey-text text-lighten-3"><a href="#">Linked In</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright grey darken-4">
-            <div class="container center-align">&copy; 2021 Mark Davidson</div>
-        </div>
-    </footer>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-        $('.materialboxed').materialbox();
-        $('.parallax').parallax();
-        $('.tabs').tabs();
-        $('.tooltipped').tooltip();
-        $('.scrollspy').scrollSpy();
-    });
-
-    // email button
-    $(function () {
-  $('#emailLink').on('click', function (event) {
-      event.preventDefault();
-    alert("Huh");
-    var email = 'mdavidson744@gmail.com';
-    var subject = ('#subject');
-    var emailBody = 'Some blah';
-    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
-  });
-});
-</script>
-</body>
-</html>
+    <?php include('footer.php'); ?>
